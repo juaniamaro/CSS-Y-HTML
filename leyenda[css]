@@ -1,0 +1,72 @@
+*HTML:
+<table id="grupos"><tr><td></td><td>
+<a href="link1" class="gb g1"><span class="tg1 tg">Grupo 1</span></a>
+<a href="link2" class="gb g2"><span class="tg2 tg">Grupo 2</span></a>
+<a href="link3" class="gb g3"><span class="tg3 tg">Grupo 3</span></a>
+<a href="link4" class="gb g4"><span class="tg4 tg">Grupo 4</span></a>
+</td></tr></table>
+*CSS:
+/* Esto quita la leyenda anterior */
+p em {
+display: none;
+}
+/* Definamos el estilo básico de la caja de los grupos */
+#grupos {display: block; width: 100%;}
+#grupos td {display: inline-block;min-width: 200px;position: relative;}
+/* Cuadraditos sobre los que se pasa el mouse */
+.gb {
+    display: inline-block;
+    width: 20px;
+    float: left;
+    margin-left: 2px;
+    height: 20px;
+}
+/* bloques de texto que aparecen al pasar el mouse */
+.tg {
+    text-transform: uppercase;
+    display:none;
+    margin-right: 3px;
+    text-align: right;
+    width: 200px;
+    position: absolute;
+    left: -200px;
+}
+/* colores de los grupos */
+.g1 {background: #666;color: #666 !important;}
+.g2 {background: #0A4559;color: #0A4559 !important;}
+.g3 {background: #590A0A; color: #590A0A !important;}
+.g4 {background: #B89E63;color: #B89E63 !important; }
+/* efecto del hover */
+#grupos td .gb:hover .tg {
+display:inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
