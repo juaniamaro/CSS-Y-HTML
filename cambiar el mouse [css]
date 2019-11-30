@@ -1,0 +1,11 @@
+*pagina donde visualizar los mouses basicos:
+http://jsfiddle.net./Jackin/LzThv/3/
+*implementarlo:
+en html elemento es lugar donde debe ser cambiado
+<elemento style="cursor:tipo">
+en css
+nombre {
+cursor: tipo;
+}
+*si lo que quieres tener es una imagen en vez de el cursor:
+<elemento style="cursor: url('url de la imagen')">
