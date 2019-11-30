@@ -27,3 +27,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut magna eu 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut magna eu nunc malesuada luctus a nec dui. Suspendisse tortor quam, iaculis vel tincidunt vel, ornare eu risus. Sed auctor elementum quam ac gravida. Sed lacus diam, semper nec facilisis a, molestie id purus. Phasellus facilisis ante et tortor tristique in lacinia mi bibendum. Sed scelerisque, diam ut ullamcorper sagittis, lectus felis consectetur leo, id venenatis ante nulla congue nibh. Ut magna ipsum, scelerisque sed viverra non, scelerisque id dolor.
 </div>
 </div>
+*Modificar el scrollbar
+*añadir css a una tablilla html
+<style type="text/css">aquí el código</style>
+*modificar el scrollball
+<style type="text/css">div::-webkit-scrollbar { height: 32px; width: 5px; background: #EEEEEE; } div::-webkit-scrollbar-thumb { background: #000000; } div::-webkit-scrollbar-track { background:#29088A; } div::-webkit-scrollbar-button { background:#00FF80; } </style>
+Scrollbar: Es lo fundamental. Las modificaciones que hagáis en este apartado será lo que modifique el lo general de la scrollbar, es la base. Es el lienzo básico para crear la scrollbar y lo que no debéis olvidaros nunca. Height es la altura, width es la anchura como ya sabéis y background es lo que os permite ponerle un color o incluso una imagen.
+Scrollbar-thumb: Es la parte del scroll que mueves arriba o abajo, la barra movil en sí por decirlo así. 
+Scrollbar-track: Es la parte del scroll que no está ocupado por la barrita. Si no ponéis nada en esta opción el fondo que os aparecerá será el que hayáis puesto general en la etiqueta de Scrollbar (la primera) así que podéis prescindir de él incluso. 
+scrollbar-button: Son los topes del scroll, arriba y abajo o izquierda y derecha si el scroll es horizontal. Son el final del scroll
+Scrollbar-corner: Son las esquinas del scroll.
+Resizer: Solo se ve cuando tenéis los dos tipos de scroll, horizontal y vertical y es el pequeño recuadro que hay entre medias.
+
