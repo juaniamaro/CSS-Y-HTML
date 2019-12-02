@@ -1,0 +1,35 @@
+*Estructura:
+<div id="mikaup">Nombre de pestaña</div><div style="display: none;" id="mikacont1"><div id="mikacont2">CONTENIDO</div><br /><br />  <div id="mikapop">Cerrar</div></div>
+*Editar la forma con css:
+#mikaup -  Será para editar la forma del boton / pestañitas
+#mikacont1 - Será para editar el fondo negro que aparece como preview, la posición etc.
+#mikacont2 - Será para editar el cuadro del contenido
+#mikapop - Será para un botoncito chachi para cerrar con más comodidad el pop up.
+#mikaup {
+propiedades que desees
+}
+#mikapop {
+  margin: 10px 400px;
+/*Añadir tus propiedades*/
+}
+#mikacont1 {
+  z-index: 999;
+  position: fixed;/*No borrar*/
+  top: 0px;/*No borrar*/
+  left: 0px; /*No borrar*/
+  right: 0px;/*No borrar*/
+  bottom: 0px;/*No borrar*/
+  background: #000;
+ /*Añadir más propiedades*/
+  }
+#mikacont2 {
+  background: #color;
+  width: 800px;
+  margin: auto;/*No borrar, si modificar*/
+  margin-top: 100px; /*No borrar, si modificar*/
+  }
+ *Estructura javascrip:
+ $(document).ready(function () {
+ $("#mikaup").click(function () { $("#mikacont1").fadeIn(300); });
+ $("#mikapop").click(function () { $("#mikacont1").fadeOut(300); });
+});
